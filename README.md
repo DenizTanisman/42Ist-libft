@@ -3,7 +3,9 @@
 # libft
 
 ## Description
-libft is a custom C static library developed as part of the 42 curriculum.  
+
+libft is a custom C static library developed as part of the 42 curriculum.
+
 The goal of this project is to reimplement a subset of standard C library functions and to build additional utility functions in order to strengthen low-level programming skills, memory management awareness, and understanding of data structures.
 
 This library is intended to be reused in future 42 projects and strictly follows the 42 Norm and subject requirements.
@@ -13,24 +15,33 @@ This library is intended to be reused in future 42 projects and strictly follows
 ## Library Overview (Detailed Description)
 
 ### Output
+
 The project produces a static library:
-- libft.a
+
+- `libft.a`
 
 ### Header
+
 All public functions and structures are declared in:
-- libft.h
+
+- `libft.h`
 
 ### Library Content
-The library is divided into three main parts:
+
+The library is divided into three main parts.
 
 ### Part 1 – Libc Functions
-Reimplementations of standard libc functions with identical behavior to their original counterparts as described in the man pages.  
+
+Reimplementations of standard libc functions with identical behavior to their original counterparts as described in the man pages.
+
 Examples include character classification, memory manipulation, string handling, and conversion functions.
 
 ### Part 2 – Additional Functions
+
 Utility functions not present in libc or implemented differently, such as string splitting, trimming, joining, integer-to-string conversion, and functional string iteration helpers.
 
 ### Part 3 – Linked List (Bonus)
+
 A singly linked list API built around the following structure:
 
 ```c
@@ -39,41 +50,50 @@ typedef struct s_list
     void            *content;
     struct s_list   *next;
 }   t_list;
+```
 
 This part includes functions for creating nodes, adding elements, iterating over lists, mapping content, and properly freeing memory.
 
-Memory Management
-	•	All dynamic memory allocations are done using malloc.
-	•	Functions return NULL if an allocation fails.
-	•	The caller is responsible for freeing allocated memory.
-	•	Linked list cleanup functions rely on user-provided function pointers to correctly free node contents.
+### Memory Management
 
+- All dynamic memory allocations are done using `malloc`.
+- Functions return `NULL` if an allocation fails.
+- The caller is responsible for freeing allocated memory.
+- Linked list cleanup functions rely on user-provided function pointers to correctly free node contents.
 
+---
 
 ## Instructions
 
-Compilation
+### Compilation
 
 To compile the library:
 
-"make"
+```bash
+make
+```
 
-Cleanup
+### Cleanup
 
-"make clean
+```bash
+make clean
 make fclean
-make re"
+make re
+```
 
-⸻
+---
 
-Usage Example
+## Usage Example
 
 Compile your program with libft:
 
-"cc -Wall -Wextra -Werror main.c -L. -lft -I. -o my_program"
+```bash
+cc -Wall -Wextra -Werror main.c -L. -lft -I. -o my_program
+```
 
-Example main.c:
+Example `main.c`:
 
+```c
 #include "libft.h"
 #include <stdio.h>
 
@@ -82,32 +102,34 @@ int main(void)
     printf("%zu\n", ft_strlen("libft"));
     return 0;
 }
+```
 
-⸻
+---
 
 ## Resources
 
-References
-	•	42 Libft subject documentation
-	•	Linux man pages
-	•	GNU C Library documentation
+### References
 
-⸻
+- 42 Libft subject documentation
+- Linux man pages
+- GNU C Library documentation
+
+---
 
 ## AI Usage Disclosure
 
 Initially, AI was used to clarify requirements, edge cases, and conceptual topics related to memory management and linked list behavior.
 
-Additionally, a custom prompt setup named “Sorgucu 42” was created on Gemini.
-This prompt was built using texts gathered from 42 Intra sources such as peer-to-peer feedback, evaluation guidelines, and cheat sheets, as well as personal evaluation strategies used during past evolutions.
+Additionally, a custom prompt setup named **"Sorgucu 42"** was created on Gemini. This prompt was built using texts gathered from 42 Intra sources such as peer-to-peer feedback, evaluation guidelines, and cheat sheets, as well as personal evaluation strategies used during past evaluations.
 
 This setup was used to simulate real peer-evaluation scenarios and to test functions before entering the actual evaluation process.
 
-AI was not used to directly generate final function implementations.
+AI was not used to directly generate final function implementations. All code was written, reviewed, and validated manually to ensure full understanding, correctness, and compliance with the 42 Norm.
 
-All code was written, reviewed, and validated manually to ensure full understanding, correctness, and compliance with the 42 Norm.
+---
 
 ## Moulinette
+
 - initial_errors: OK
 - test_ft_isalpha: OK
 - test_ft_isdigit: OK
