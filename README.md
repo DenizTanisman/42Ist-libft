@@ -48,9 +48,9 @@ Memory Management
 	•	The caller is responsible for freeing allocated memory.
 	•	Linked list cleanup functions rely on user-provided function pointers to correctly free node contents.
 
-⸻
 
-Instructions
+
+## Instructions
 
 Compilation
 
@@ -85,7 +85,7 @@ int main(void)
 
 ⸻
 
-Resources
+## Resources
 
 References
 	•	42 Libft subject documentation
@@ -94,9 +94,7 @@ References
 
 ⸻
 
-AI Usage Disclosure
-
-AI tools were used as a supportive and explanatory aid to better understand the expectations of the project and the evaluation process.
+## AI Usage Disclosure
 
 Initially, AI was used to clarify requirements, edge cases, and conceptual topics related to memory management and linked list behavior.
 
@@ -106,13 +104,43 @@ This prompt was built using texts gathered from 42 Intra sources such as peer-to
 This setup was used to simulate real peer-evaluation scenarios and to test functions before entering the actual evaluation process.
 
 AI was not used to directly generate final function implementations.
+
 All code was written, reviewed, and validated manually to ensure full understanding, correctness, and compliance with the 42 Norm.
 
-⸻
-
-Notes
-	•	This project follows the 42 Norm strictly.
-	•	Undefined behavior is not handled unless explicitly required by the subject.
-	•	This library is intended for educational purposes within the 42 curriculum.
-# 42Ist-libft
-# 42Ist-libft
+## Moulinette
+- initial_errors: OK
+- test_ft_isalpha: OK
+- test_ft_isdigit: OK
+- test_ft_isalnum: OK
+- test_ft_isascii: OK
+- test_ft_isprint: OK
+- test_ft_strlen: OK
+- test_ft_memset: OK
+- test_ft_bzero: OK
+- test_ft_memcpy: OK
+- test_ft_memmove: OK
+- test_ft_strlcpy: OK
+- test_ft_strlcat: OK
+- test_ft_toupper: OK
+- test_ft_tolower: OK
+- test_ft_strchr: OK
+- test_ft_strrchr: OK
+- test_ft_strncmp: OK
+- test_ft_memchr: OK
+- test_ft_memcmp: OK
+- test_ft_strnstr: OK
+- test_ft_atoi: OK
+- test_ft_calloc: OK
+- test_ft_strdup: OK
+- test_ft_substr: OK
+- test_ft_strjoin: OK
+- test_ft_strtrim: OK
+- test_ft_split: OK
+- test_ft_itoa: OK
+- test_ft_strmapi: OK
+- test_ft_striteri: OK
+- test_ft_putchar_fd: OK
+- test_ft_putstr_fd: OK
+- test_ft_putendl_fd: OK
+- test_ft_putnbr_fd: OK
+- test_linked_lists: 9/9 functions correct
